@@ -15,7 +15,7 @@ if (!projectName) {
   console.error('\nUsage:');
   console.error('  npx create-web-site <project-name>');
   console.error('\nExample:');
-  console.error('  npx create-web-site my-app');
+  console.error('  npx create-web-site my-web-site');
   process.exit(1);
 }
 

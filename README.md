@@ -15,8 +15,8 @@ A CLI tool to instantly generate simple web projects, like a super lightweight v
 ## Usage
 
 ```bash
-npx @laststance/create-web-site my-app
-cd my-app
+npx @laststance/create-web-site my-web-site
+cd my-web-site
 node server.js
 ```
 
@@ -25,7 +25,7 @@ Open http://localhost:3000 in your browser to see the generated page.
 ## Generated Project Structure
 
 ```
-my-app/
+my-web-site/
 ├── package.json
 ├── server.js      # Node.js development server
 ├── index.html     # Main HTML file

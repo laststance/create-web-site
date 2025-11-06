@@ -2,6 +2,25 @@
   "name": "@laststance/create-web-site",
   "version": "1.0.0",
   "description": "Scaffold a minimal HTML/CSS/JS project with Node.js development server",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laststance/create-web-site.git"
+  },
+  "author": "Ryota Murakami <dojce1048@gmail.com> (https://github.com/ryota-murakami)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "homepage": "https://github.com/laststance/create-web-site#readme",
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
+  },
+  "scripts": {
+    "prettier": "prettier --ignore-unknown --write ."
+  },
+  "volta": {
+    "node": "22.21.1"
+  },
   "type": "module",
   "bin": {
     "create-web-site": "./bin/cli.js"
@@ -20,15 +39,5 @@
     "html",
     "css",
     "javascript"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/laststance/create-web-site.git"
-  },
-  "author": "laststance",
-  "license": "MIT",
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "homepage": "https://github.com/laststance/create-web-site#readme"
+  ]
 }
