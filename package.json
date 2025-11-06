@@ -16,7 +16,8 @@
     "*": "prettier --ignore-unknown --write"
   },
   "scripts": {
-    "prettier": "prettier --ignore-unknown --write ."
+    "prettier": "prettier --ignore-unknown --write .",
+    "push-release-commit": "npx push-release-commit"
   },
   "volta": {
     "node": "22.21.1"
@@ -41,7 +42,9 @@
     "javascript"
   ],
   "devDependencies": {
+    "@laststance/npm-publish-tool": "^1.6.9",
     "lint-staged": "^16.2.6",
-    "prettier": "^3.6.2"
+    "prettier": "^3.6.2",
+    "release-it": "^19.0.6"
   }
 }
