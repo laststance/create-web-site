@@ -1,3 +1,3 @@
-console.log('Welcome to your new website! 🎉');
+console.log('Welcome to your new website! 🎉')
 
 // Your JavaScript code here

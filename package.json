@@ -39,5 +39,9 @@
     "html",
     "css",
     "javascript"
-  ]
+  ],
+  "devDependencies": {
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2"
+  }
 }
