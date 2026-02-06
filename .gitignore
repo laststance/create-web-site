@@ -47,6 +47,7 @@ Thumbs.db
 test-project/
 test-app/
 my-app/
+logs/
 backlog/archive/
 *.tmp
 

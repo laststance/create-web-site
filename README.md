@@ -8,6 +8,7 @@ A CLI tool to instantly generate simple web projects, like a super lightweight v
 
 - 🚀 Minimal HTML/CSS/JS setup
 - 📦 Built-in Node.js development server
+- 🔄 Live reload — CSS hot-swap (no flash) + full reload for HTML/JS
 - ⚡ Zero dependencies (Node.js standard library only)
 - 🎯 ESM (import/export) support
 - 🛠️ Start developing immediately
@@ -53,11 +54,22 @@ pnpm dev
 npm run dev
 ```
 
+## Live Reload
+
+The development server includes built-in live reload powered by SSE (Server-Sent Events). It activates automatically when the server starts — no configuration needed.
+
+| File type | Behavior |
+|-----------|----------|
+| `.css` | **Hot-swap** — styles update instantly without page refresh |
+| `.html`, `.js` | **Full reload** — page refreshes automatically |
+| `.json`, `.svg` | **Full reload** — page refreshes automatically |
+
+Changes are debounced (100ms) to handle editor save bursts. The live reload script is injected at runtime and does not modify your template files.
+
 ## Future Enhancements
 
 Planned features:
 
-- ✅ Live reload (auto-reload on file changes)
 - ✅ Template selection (--template option)
   - HTML Only
   - Tailwind CSS
