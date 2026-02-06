@@ -11,6 +11,7 @@
     "releaseNotes": "if [ -n \"${latestTag}\" ] && [ \"${latestTag}\" != \"null\" ]; then git log --no-merges --pretty=format:\"* %s %h\" ${latestTag}...main | grep -v 'release v[0-9]\\{1,3\\}\\.[0-9]\\{1,3\\}\\.[0-9]\\{1,3\\}'; else git log --no-merges --pretty=format:\"* %s %h\" | head -20 | grep -v 'release v[0-9]\\{1,3\\}\\.[0-9]\\{1,3\\}\\.[0-9]\\{1,3\\}'; fi"
   },
   "npm": {
-    "publishArgs": ["--provenance"]
+    "publishArgs": ["--provenance"],
+    "skipChecks": true
   }
 }
